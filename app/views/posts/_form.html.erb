@@ -1,4 +1,7 @@
 <%= form_for(@post) do |f| %>
+<%#= f.hidden_field :author_id, value: params[:author_id] %>
+<%= author_id_field(@post) %>
+<br>
   <label>Post title:</label><br>
   <%= f.text_field :title %><br>
 
